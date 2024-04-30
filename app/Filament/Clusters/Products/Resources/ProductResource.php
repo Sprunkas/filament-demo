@@ -259,6 +259,7 @@ class ProductResource extends Resource
             ->deferFilters()
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\ViewAction::make(),
             ])
             ->groupedBulkActions([
                 Tables\Actions\DeleteBulkAction::make()
